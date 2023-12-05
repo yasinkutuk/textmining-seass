@@ -106,6 +106,10 @@ text_df %>%
 # Her bir kelimeyi, harfi veya isaretciyi biletleştirdik.
 
 
+
+
+# İşlemek icin Jane Austen'in kitaplarini indiren bir paket var.
+
 # Working with Jane Austen text -------------------------------------------
 
 # Pulling six Jane Austen novels
@@ -119,7 +123,7 @@ original_books <- janeaustenr::austen_books() %>%
 original_books
 
 
-# Tokenize
+# Tokenize (bu sefer butun kitaplari)
 tidy_books <- original_books %>%
   unnest_tokens(word, text)
 
@@ -128,10 +132,13 @@ tidy_books
 # Tokenization temel mantigi icin, Table 1 in:
 # https://ceur-ws.org/Vol-450/paper9.pdf
 
+
+
+
 # Genellikle stop words işlenmez!
 
 # Remove stop words (e.g., "the", "of")
-data(stop_words) # from tidytext paclage
+data(stop_words) # from tidytext package
 
 
 tidy_books <- tidy_books %>%

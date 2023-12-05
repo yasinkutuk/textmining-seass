@@ -312,7 +312,7 @@ word_cors %>%
 word_cors %>%
   filter(item1 %in% c("elizabeth", "pounds", "married", "pride")) %>%
   group_by(item1) %>%
-  top_n(6) %>%
+  top_n(10) %>%
   ungroup() %>%
   mutate(item2 = reorder(item2, correlation)) %>%
   ggplot(aes(item2, correlation)) +
@@ -326,7 +326,7 @@ word_cors %>%
 set.seed(2016)
 
 word_cors %>%
-  filter(correlation > .15) %>%
+  filter(correlation > .20) %>%
   graph_from_data_frame() %>%
   ggraph(layout = "fr") +
   geom_edge_link2(aes(edge_alpha = correlation), show.legend = FALSE) +

@@ -189,8 +189,7 @@ bind_rows(afinn,bing_and_nrc) %>%
   facet_wrap(~method, ncol = 1, scales = "free_y")
 
 
-# To better understand differences in results, check how many positive versus 
-## negative results are contained in the bing and nrc lexicons
+# Sonuclarin neden farklilastigini anlamak icin pos/neg sayalim
 get_sentiments("nrc") %>% 
   filter(sentiment %in% c("positive", "negative")) %>% 
   count(sentiment)
@@ -224,7 +223,7 @@ bing_word_counts %>%
   coord_flip()
 
 
-# Bazi kelimeler gereksiz yere baglam (context) icinde anlamsiz puanlanabilir
+# Bazi kelimeler gereksiz yere baglam (context) icinde anlamsiz puanlanabilir [miss kelimesi]
 # bunlari cikartmamiz lazim, dolasiyisyla stop words e özel kelimeler eklemek istersek
 custom_stop_words <- bind_rows(data_frame(word = c("miss"), lexicon = c("custom")), stop_words)
 
@@ -250,6 +249,7 @@ tidy_books %>%
   count(word, sentiment, sort = TRUE) %>%
   acast(word ~ sentiment, value.var = "n", fill = 0) %>% # cast to matrix
   comparison.cloud(colors = c("#F8766D", "#00BFC4"), max.words = 50) # bu renklendirme ozel hex koduyla
+
 
 # hex kodlarini ogrenmek icin:
 # https://www.programiz.com/r/colors
