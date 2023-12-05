@@ -1,0 +1,79 @@
+---
+title: 'Metin Madenciliği Kaynaklar'
+author: 'Yasin Kutuk, Ph.D.'
+runtime: shiny
+output: ioslides_presentation
+---
+
+
+## MOOCs (I)
+
+* Datacamp's Bootcamp
+https://www.datacamp.com/courses/introduction-to-text-analysis-in-r
+
+* Udemy's Text Mining and Natural Language Processing in R
+https://www.udemy.com/course/text-mining-and-natural-language-processing-in-r/
+
+* Coursera's Text Mining and Analytics
+https://www.coursera.org/learn/text-mining
+
+
+
+## MOOCs (II)
+
+* Coursera's Quantitative Text Analysis and Measures of Readability in R
+https://www.coursera.org/projects/quantitative-text-analysis-and-measures-of-readability-in-r
+
+* Coursera's Hands-on Text Mining and Analytics (R ve Py karışık)
+https://www.coursera.org/learn/text-mining-analytics
+
+
+
+## DIY BOOKs
+
+* Text Analysis with R (Jockers ve Thalken)
+https://link.springer.com/book/10.1007/978-3-030-39643-5
+
+* Welcome to Text Mining with R (Silge ve Robinson)
+https://www.tidytextmining.com/
+
+* Text analysis in R (LSE Open)
+https://eprints.lse.ac.uk/86659/1/Benoit_Text%20analysis%20in%20R_2018.pdf
+
+* Mastering Text Mining with R (Kumar ve Paul)
+https://www.oreilly.com/library/view/mastering-text-mining/9781783551811/?green=C89CE13A-3CEC-5EBD-08AC-F97ED76586DF&intcmp=af-mybuy-9781783551811.IP
+
+
+## REF BOOKs
+
+* Introduction to Information Retrieval (11. ch sonrası)
+https://nlp.stanford.edu/IR-book/
+
+* The Oxford Handbook of Computational Linguistics (Mitkov)
+https://academic.oup.com/edited-volume/42643
+
+* Statistical NLP (Manning ve Schütze)
+http://nlp.stanford.edu/fsnlp/
+
+
+
+## Github Sources
+
+* Awesome NLP (similar to Awesome DataScience)
+https://github.com/keon/awesome-nlp#R
+
+* Functions for Text Mining and Topic Modeling (textmineR)
+https://github.com/TommyJones/textmineR
+
+* Uncle's Steve 
+https://github.com/stepthom/text_mining_resources
+
+
+## thnx <- 'Teşekkürler'
+
+* https://yasinkutuk.github.io
+
+* https://github.com/yasinkutuk
+
+
+
